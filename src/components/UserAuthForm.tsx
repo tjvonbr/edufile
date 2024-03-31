@@ -28,7 +28,9 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
     resolver: zodResolver(userAuthSchema),
   });
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-  const [isGitHubLoading, setIsGitHubLoading] = React.useState<boolean>(false);
+  const [isGoogleLoading, setIsGoogleLoading] = React.useState<boolean>(false);
+  const [isMicrosoftLoading, setIsMicrosoftLoading] =
+    React.useState<boolean>(false);
   const searchParams = useSearchParams();
 
   async function onSubmit(data: FormData) {
@@ -71,7 +73,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
               autoCapitalize="none"
               autoComplete="email"
               autoCorrect="off"
-              disabled={isLoading || isGitHubLoading}
+              disabled={isLoading || isGoogleLoading}
               {...register("email")}
             />
             {errors?.email && (
@@ -84,11 +86,11 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
             {isLoading && (
               <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
             )}
-            Sign In with Email
+            Sign in with email
           </button>
         </div>
       </form>
-      <div className="relative">
+      <div className="relative grid gap-2">
         <div className="absolute inset-0 flex items-center">
           <span className="w-full border-t" />
         </div>
@@ -98,22 +100,40 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <button
-        type="button"
-        className={cn(buttonVariants({ variant: "outline" }))}
-        onClick={() => {
-          setIsGitHubLoading(true);
-          signIn("github");
-        }}
-        disabled={isLoading || isGitHubLoading}
-      >
-        {isGitHubLoading ? (
-          <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icons.gitHub className="mr-2 h-4 w-4" />
-        )}{" "}
-        Github
-      </button>
+      <div className="grid gap-2">
+        <button
+          type="button"
+          className={cn(buttonVariants({ variant: "outline" }))}
+          onClick={() => {
+            setIsGoogleLoading(true);
+            signIn("github");
+          }}
+          disabled={isLoading || isGoogleLoading}
+        >
+          {isGoogleLoading ? (
+            <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Icons.google className="mr-2 h-4 w-4" />
+          )}{" "}
+          Google
+        </button>
+        <button
+          type="button"
+          className={cn(buttonVariants({ variant: "outline" }))}
+          onClick={() => {
+            setIsMicrosoftLoading(true);
+            signIn("microsoft");
+          }}
+          disabled={isLoading || isMicrosoftLoading}
+        >
+          {isMicrosoftLoading ? (
+            <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Icons.microsoft className="mr-2 h-4 w-4" />
+          )}{" "}
+          Microsoft
+        </button>
+      </div>
     </div>
   );
 }
