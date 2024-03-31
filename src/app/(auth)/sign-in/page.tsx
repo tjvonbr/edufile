@@ -1,3 +1,4 @@
+import { UserAuthForm } from "@/components/UserAuthForm";
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
@@ -34,7 +35,7 @@ export default function SignInPage() {
             Enter your email to sign in to your account
           </p>
         </div>
-        {/* <UserAuthForm /> */}
+        <UserAuthForm />
         <p className="px-8 text-center text-sm text-muted-foreground">
           <Link
             href="/register"
