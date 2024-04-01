@@ -5,3 +5,5 @@ export const userRoles = {
   REGIONAL_ADMIN: "Regional Admin",
   SUPER_ADMIN: "Super Admin",
 };
+
+export const REGIONAL_OFFICES_LENGTH = 56;

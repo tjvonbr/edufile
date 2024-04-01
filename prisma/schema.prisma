@@ -39,6 +39,7 @@ model RegionalOffice {
 
 model SchoolDistrict {
   id                  String          @id @default(uuid())
+  name                String
   district            String
   regionalOfficeId    String
   regionalOffice      RegionalOffice  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
