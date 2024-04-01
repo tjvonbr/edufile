@@ -4,7 +4,6 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  Command,
   CreditCard,
   File,
   FileText,
@@ -13,8 +12,10 @@ import {
   Laptop,
   Loader2,
   LucideProps,
+  Menu,
   Moon,
   MoreVertical,
+  NotebookPen,
   Pizza,
   Plus,
   School,
@@ -29,6 +30,10 @@ import {
 
 export type Icon = LucideIcon;
 
+export interface LucideIcons {
+  [key: string]: LucideIcon;
+}
+
 export const Icons = {
   logo: School,
   close: X,
@@ -39,6 +44,8 @@ export const Icons = {
   post: FileText,
   page: File,
   media: Image,
+  menu: Menu,
+  notes: NotebookPen,
   settings: Settings,
   billing: CreditCard,
   ellipsis: MoreVertical,
