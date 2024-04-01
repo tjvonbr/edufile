@@ -27,3 +27,21 @@ model User {
 
   @@map("users")
 }
+
+model RegionalOffice {
+  id                String              @id @default(uuid())
+  region            String              
+  schoolDistricts   SchoolDistrict[]
+
+
+  @@map("regional_offices")
+}
+
+model SchoolDistrict {
+  id                  String          @id @default(uuid())
+  district            String
+  regionalOfficeId    String
+  regionalOffice      RegionalOffice  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
+
+  @@map("school_districts")
+}
