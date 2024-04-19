@@ -20,6 +20,7 @@ import {
   Plus,
   School,
   Settings,
+  SquareLibrary,
   SunMedium,
   Trash,
   Twitter,
@@ -37,6 +38,7 @@ export interface LucideIcons {
 export const Icons = {
   logo: School,
   close: X,
+  district: SquareLibrary,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,

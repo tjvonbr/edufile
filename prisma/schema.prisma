@@ -21,9 +21,12 @@ enum UserRole {
 
 model User {
   id          String       @id @default(uuid())
-  firstName   String?
-  lastName    String?
+  firstName   String
+  lastName    String
+  email       String       @unique
   role        UserRole
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
 
   @@map("users")
 }
@@ -33,14 +36,14 @@ model RegionalOffice {
   region            String              
   schoolDistricts   SchoolDistrict[]
 
-
   @@map("regional_offices")
 }
 
 model SchoolDistrict {
   id                  String          @id @default(uuid())
-  name                String
-  district            String
+  stateId             String          @unique
+  ncesDistrictId      String          @unique
+  name                String          @unique
   regionalOfficeId    String
   regionalOffice      RegionalOffice  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
 
