@@ -29,7 +29,7 @@ export function MainNavbar({ children, items }: MainNavbarProps) {
           href="/"
         >
           <Icons.logo />
-          <p>ltc</p>
+          <p>edufile</p>
         </Link>
         <button
           className="flex items-center space-x-2 md:hidden"

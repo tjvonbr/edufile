@@ -5,7 +5,7 @@ import { DashboardHeader } from "@/components/header";
 import UserCreateButton from "@/components/user-create-button";
 
 export default async function Dashboard() {
-  const users: User[] = await prisma?.user.findMany();
+  const users: User[] = await prisma.user.findMany();
 
   return (
     <div className="container flex-col space-y-8">

@@ -1,40 +1,16 @@
-"use client";
-
 import { cn } from "@/lib/utils";
 import { ButtonProps, buttonVariants } from "./ui/button";
-import { useState } from "react";
 import { Icons } from "./ui/icons";
+import Link from "next/link";
 
-interface UserCreateButtonProps extends ButtonProps {}
-
-export default function UserCreateButton({
-  className,
-  variant,
-  ...props
-}: UserCreateButtonProps) {
-  const [isLoading, setIsLoading] = useState(false);
-
-  async function handleSubmit() {}
-
+export default function UserCreateButton() {
   return (
-    <button
-      onClick={handleSubmit}
-      className={cn(
-        buttonVariants({ variant: "default" }),
-        {
-          "cursor-not-allowed opacity-60": isLoading,
-        },
-        className
-      )}
-      disabled={isLoading}
-      {...props}
+    <Link
+      href={"/users/create"}
+      className={cn(buttonVariants({ variant: "default" }))}
     >
-      {isLoading ? (
-        <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-      ) : (
-        <Icons.add className="mr-2 h-4 w-4" />
-      )}
+      <Icons.add className="mr-2 h-4 w-4" />
       New user
-    </button>
+    </Link>
   );
 }
