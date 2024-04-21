@@ -33,7 +33,9 @@ model User {
 
 model RegionalOffice {
   id                String              @id @default(uuid())
+  ncesRegionId      String
   region            String              
+  name              String
   schoolDistricts   SchoolDistrict[]
 
   @@map("regional_offices")
@@ -41,7 +43,7 @@ model RegionalOffice {
 
 model SchoolDistrict {
   id                  String          @id @default(uuid())
-  stateId             String          @unique      
+  stateId             String           
   ncesDistrictId      String          
   name                String          
   regionalOfficeId    String?
