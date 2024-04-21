@@ -1,0 +1,184 @@
+CountyName,RecType,"Region",Type,School,Name,Administrator,Mailing Address,Delivery Address,City,Zip,Telephone,GradeServed,StRep,StSen,FedCong,Cat,NCES ID,Website,LastUpdated
+,ROE,010000000,00,0000,Adam/Brwn/Cass/Morgn/Pik/Sctt ROE,Hon. Jill S. Reis,507 Vermont St,,Quincy,62301 2920,217277-2080,7-12,099,50,15,1,1700162,http://www.roe1.org,20240420 05:00:03
+,Reg Prg,010000000,00,9201,The Lafayette Academy,Mr. Christopher Marshall,409 Hardin Ave Fl 3,,Jacksonville,62650,217243-8438,9-12,099,50,15,A,170016203204,,20240420 05:00:03
+,Reg Prg,010000000,00,9305,Adams County RSSP,Ms. Marcey Wells,1416 Maine St,,Quincy,62301 4261,217228-7175,7-12,099,50,15,A,170016206022,,20240420 05:00:03
+,Reg Prg,010000000,00,9306,Academic Behavior&Community Acad,Ms. Marcey Wells,1416 Maine St,,Quincy,62301 4261,217228-7175,7-12,099,50,15,A,170016206156,http://www.qps.org,20240420 05:00:03
+,Reg Prg,010000000,00,9308,PACE Alternative School,Brad Tomhave,201 E Higbee St,,Pittsfield,62363 1946,217285-2248,6-12,100,50,15,A,170016206163,http://www.pikeland.net,20240420 05:00:03
+,Reg Prg,010000000,00,9309,ARC,Mr. Christopher Marshall,409 Hardin Ave Fl 3,,Jacksonville,62650,217243-8438,6-12,099,50,15,A,170016203208,,20240420 05:00:03
+,ROE,030000000,00,0000,Bond/Christian/Effingham/Fayette/Montgomery ROE,Hon. Julie R Wollerman,1500 W Jefferson St,,Vandalia,62471 1510,618283-5011,6-12,110,55,15,1,1700165,http://www.roe3.org,20240420 05:00:03
+,Reg Prg,030000000,00,9201,New Approach Alternative High Sch,Ms. Laura Benhoff,1500 W Jefferson St,,Vandalia,62471 1510,618283-9311,9-12,110,55,15,A,170016502272,http://roe3yes.org,20240420 05:00:03
+,Reg Prg,030000000,00,9202,Aspire Alternative High School,Ms. Amber Kidd,1901 S 4Th St Ste 215,1901 S 4Th St Ste 215,Effingham,62401 4188,217342-2865,9-12,107,54,12,A,170016505759,http://roe3yes.org,20240420 05:00:03
+,Reg Prg,030000000,00,9203,Revive Alternative High School,Ms. Kristin Charlesworth,1100 N Old Route 66,,Litchfield,62056 1092,217408-2185,9-12,108,54,15,A,170016506719,http://roe3yes.org,20240420 05:00:03
+,Reg Prg,030000000,00,9301,FOCUS Safe Sch Program,Ms. Laura Benhoff,1500 W Jefferson St,1500 W Jefferson St,Vandalia,62471 1510,618283-9311,6-9,110,55,15,A,170016502287,http://roe3yes.org,20240420 05:00:03
+,Reg Prg,030000000,00,9302,Tristar Acad Safe Sch Program,Ms. Amber Kidd,1901 S 4Th St Ste 215,1901 S 4Th St Ste 215,Effingham,62401 4188,217342-2865,6-9,107,54,12,A,170016504627,http://roe3yes.org,20240420 05:00:03
+,Reg Prg,030000000,00,9305,Phoenix Safe Schools Program,Ms. Kristin Charlesworth,1100 N Old Route 66,,Litchfield,62056 1092,217408-2185,6-9,108,54,15,A,170016506768,http://roe3yes.org,20240420 05:00:03
+,ROE,040000000,00,0000,Boone/Winnebago ROE,Mr. Scott Bloomquist,300 Heart Blvd,,Loves Park,61111 7516,815636-3060,6-12,067,34,17,1,1700166,,20240420 05:00:03
+,Reg Prg,040000000,00,9201,Summit Academy TAOEP,Mrs. Meghan Hawkinson,1102 Evans Ave,,Machesney Pk,61115 2967,815636-3060,6-12,067,34,16,A,170016602313,,20240420 05:00:03
+,Reg Prg,040000000,00,9301,Summit Academy RSSP,Ms. Nicole Corbett,1102 Evans Ave,,Machesney Pk,61115 2967,779771-6392,6-12,067,34,16,A,170016602338,,20240420 05:00:03
+,Reg Prg,040000000,00,9501,Summit Academy ALOP,Ms. Nicole Corbett,1102 Evans Ave,,Machesney Pk,61115 2967,815636-3060,9-12,067,34,16,A,170016605647,,20240420 05:00:03
+,ISC,050000000,00,0000,Region 05 North Cook ISC 1,Dr. Kevin Jauch,1001 E Touhy Ave Ste 200,,Des Plaines,60018 5800,847824-8300,6-12,077,39,03,1,1700220,http://ncisc.org,20240420 05:00:03
+,Reg Prg,050000000,00,9301,North Cook Young Adult Academy,Mr. Jeremy Paul,1001 E Touhy Ave Ste 200,,Des Plaines,60018 5800,847803-3705,6-12,077,39,03,A,170022003951,https://www.ncisc.org/NCYAA,20240420 05:00:03
+,Reg Prg,050000000,00,9501,NCISC ALOP,Mr. Jeremy Paul,1001 E Touhy Ave Ste 200,,Des Plaines,60018 5800,847803-3705,6-12,077,39,03,A,170022006847,,20240420 05:00:03
+,Reg Prg,050000000,00,9502,North Cook Student Advocacy ALOP,Kevin Jauch,1001 E Touhy Ave Ste 200,,Des Plaines,60018 5800,847824-8300,6-12,055,28,09,A,170022006875,,20240420 05:00:03
+,ISC,060000000,00,0000,Region 06 West Cook ISC 2,Dr. Mark A Klaisner,4413 Roosevelt Rd Ste 104,,Hillside,60162 2057,708449-4284,6-12,007,04,07,1,1700221,http://www.west40.org,20240420 05:00:03
+,Reg Prg,060000000,00,9301,West 40 Reg Safe Sch Middle Prg,Mr. John  Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,6-8,007,04,07,A,170022104691,,20240420 05:00:03
+,Reg Prg,060000000,00,9302,Harbor Academy Reg Safe Sch Prg,Mr. John Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,9-12,007,04,07,A,170022104694,,20240420 05:00:03
+,Reg Prg,060000000,00,9303,Morton Alternative Schools,Mr. John Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,9-12,007,04,07,A,170022104700,,20240420 05:00:03
+,Reg Prg,060000000,00,9501,West 40 ALOP Achievers,Mr. John Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,9-12,007,04,07,A,170022106162,http://www.west40.org,20240420 05:00:03
+,Reg Prg,060000000,00,9502,West 40-Sr. Plus,Mr. John  Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,12,007,04,07,A,170022106161,http://www.west40.org,20240420 05:00:03
+,Reg Prg,060000000,00,9503,ALOP Academic Learning Program,Mr. John  Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,9-12,007,04,07,A,170022106212,http://www.oprf.org,20240420 05:00:03
+,Reg Prg,060000000,00,9504,Proviso THSD 209 Dream School,Mr. John  Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,9-12,007,04,07,A,170022106319,http://www.pths209.org,20240420 05:00:03
+,Reg Prg,060000000,00,9505,TAPESTRY ALOP,Mr. John  Milosovic,415 Lexington St,,Maywood,60153 3271,708449-4284,4-12,007,04,07,A,170022106356,,20240420 05:00:03
+,Reg Prg,060000000,00,9506,West 40 High Needs Alternative Learning Program,Joe Gage,415 Lexington St,,Maywood,60153 3271,708236-3250,6-12,007,04,07,A,170022106841,,20240420 05:00:03
+,ISC,070000000,00,0000,Region 07 South Cook ISC 4,Dr. Vanessa J Kinder,253 W Joe Orr Rd,,Chicago Heights,60411 1744,708754-6600,6-12,080,40,02,1,1700188,,20240420 05:00:03
+,Reg Prg,070000000,00,9201,South Cook Truancy Program,Vanessa J Kinder,405 Ashland Ave,,Chicago Hts,60411 1634,708754-6600,6-12,080,40,02,A,170018806876,,20240420 05:00:03
+,Reg Prg,070000000,00,9301,Regl Inst Scholastic Excellence,Dr. Vanessa J Kinder,405 Ashland Ave,,Chicago Heights,60411 1634,708754-6600,6-12,080,40,02,A,170018802593,http://www.s-cook.org,20240420 05:00:03
+,Reg Prg,070000000,00,9304,Regl Inst Scholastic Excellence,Dr. Vanessa J Kinder,11218 S Ridgeland Ave,,Worth,60482 1970,708671-0935,6-12,035,18,06,A,170018806165,http://www.s-cook.org,20240420 05:00:03
+,Reg Prg,070000000,00,9501,South Cook ISC Student Advocate ALOP,Vanessa Kinder,253 W Joe Orr Rd,,Chicago Hts,60411 1744,708754-6600,6-12,080,40,02,A,170018806877,,20240420 05:00:03
+,Reg Prg,070000000,00,9502,South Cook ISC ALOP,Vanessa J Kinder,253 W Joe Orr Rd,,Chicago Hts,60411 1744,708754-6600,6-11,080,40,02,A,,,20240420 05:00:03
+,ROE,080000000,00,0000,Carroll/Jo Daviess/Stephenson ROE,Hon. Aaron Mercier,27 S State Ave Ste 101,,Freeport,61032 4210,815599-1408,6-12,090,45,17,1,1700170,http://www.roe8.com,20240420 05:00:03
+,Reg Prg,080000000,00,9201,Freeport Alternative High Sch,Mrs. Dana Dinderman,1330 S Locust Ave,,Freeport,61032 6325,815233-0796,6-12,090,45,17,A,170017005649,http://www.freeportschooldistrict.com,20240420 05:00:03
+,Reg Prg,080000000,00,9301,RAP Freeport,Mr. Chris Shockey,27 S State Ave,,Freeport,61032 4210,815599-1408,6-12,090,45,17,A,170017002342,http://www.roe8.com,20240420 05:00:03
+,Reg Prg,080000000,00,9302,RAP Elizabeth,Mr. Aaron Mercier,950 US Highway 20 W,,Elizabeth,61028 9333,815599-1408,6-12,089,45,16,A,170017004640,http://www.roe8.com,20240420 05:00:03
+,ROE,090000000,00,0000,Champaign/Ford ROE,Hon. Gary Lewis,3358 Big Pine Trail,,Champaign,61822 1406,217893-3219,6-12,103,52,13,1,1700171,,20240420 05:00:03
+,Reg Prg,090000000,00,9202,Juvenile Detention Center,Ms. Donna Kaufman,400 Art Bartell Rd,,Urbana,61802 2879,217384-3780,6-11,103,52,13,A,170017103882,,20240420 05:00:03
+,Reg Prg,090000000,00,9203,RE-Start Program,Donna Kaufman,45 E University Ave,,Champaign,61820 4076,217893-3219,9-12,103,52,13,A,170017106721,,20240420 05:00:03
+,Reg Prg,090000000,00,9301,R E A D Y Program,Ms. Donna Kaufman,45 E University Ave,,Champaign,61820 4076,217239-0322,6-12,103,52,13,A,170017102351,,20240420 05:00:03
+,ROE,110000000,00,0000,Clk/Cls/Cmbn/Dglas/Edgr/Mltr/Shlb,Hon. Kyle Thompson,730 7th St,,Charleston,61920 2101,217348-0151,6-12,101,51,15,1,1700175,http://roe11.org,20240420 05:00:03
+,Reg Prg,110000000,00,9202,Paris TAOEP,Mrs. Michelle Young,210 E Court St,,Paris,61944 2292,217348-0151,6-12,101,51,15,A,170017506895,,20240420 05:00:03
+,Reg Prg,110000000,00,9203,Lerna TAOEP,Mr. Jerald Calandrilla,PO Box 129,10 3Rd St,Lerna,62440 0129,217235-4867,6-12,101,51,15,A,170017506894,,20240420 05:00:03
+,Reg Prg,110000000,00,9205,Shelbyville TAOEP,Mrs. Michelle Young,730 7Th St,,Charleston,61920 2101,217348-0151,6-12,101,51,15,A,170017506896,,20240420 05:00:03
+,Reg Prg,110000000,00,9302,Paris Bridges,Mrs. Michelle Young,210 E Court St,,Paris,61944 2292,217463-3044,6-12,102,51,15,A,170017504659,http://roe11.org,20240420 05:00:03
+,Reg Prg,110000000,00,9303,Lerna Bridges,Mr. Jerald Calandrilla,PO Box 129,10  Third St,Lerna,62440 0129,217235-4867,6-12,101,51,12,A,170017504660,http://roe11.org,20240420 05:00:03
+,Reg Prg,110000000,00,9304,Shelbyville Bridges,Mrs. Michelle Young,201 E North 12th St,,Shelbyville,62565 1018,217774-1037,6-12,107,54,15,A,170017504672,http://roe11.org,20240420 05:00:03
+,ROE,120000000,00,0000,Clay/Cwford/Jsper/Lwrnce/Rhland,Mr. Jeremy Brush,300 W Main St Ste 307,,Robinson,62454 2038,618544-2719,6-12,110,55,12,1,1700173,http://www.roe12.org,20240420 05:00:03
+,Reg Prg,120000000,00,9202,ASSIST TAOEP 12,Mr. Kyle  Shelton,407 S Whittle Ave,407 S Whittle Ave,Olney,62450 2262,618455-3605,6-12,102,51,12,A,170017302440,http://www.roe12.net/assist_taoep-rssp.html,20240420 05:00:03
+,Reg Prg,120000000,00,9307,ASSIST RSSP 12,Mr. Kyle  Shelton,407 S Whittle Ave,407 S Whittle Ave,Olney,62450 2262,618455-3605,6-12,102,51,12,A,170017306215,http://www.roe12.net/assist_taoep-rssp.html,20240420 05:00:03
+,ROE,130000000,00,0000,Clintn/Jeffrsn/Marin/Washngtn ROE,Hon. Matt Renaud,1710 Broadway St,,Mount Vernon,62864 2930,618244-8040,P-12,116,58,12,1,1700174,http://www.roe13.k12.il.us,20240420 05:00:03
+,Reg Prg,130000000,00,9202,Centralia Alternative School,Mrs. Kim Voss,501 N Elm St,,Centralia,62801 2958,618918-2733,7-12,110,55,12,A,170017402445,http://www.roe13.k12.il.us,20240420 05:00:03
+,Reg Prg,130000000,00,9205,Mt Vernon Alternative School,Mr. Chris White,2300 Benton Rd,,Mount Vernon,62864 6132,618316-7071,6-12,116,58,12,A,170017402806,http://www.roe25.com,20240420 05:00:03
+,Reg Prg,130000000,00,9301,Safe School Program  Centralia,Mrs. Kim Voss,501 N Elm St,,Centralia,62801 2958,618918-2733,7-12,110,55,12,A,170017402446,http://www.roe13.k12.il.us,20240420 05:00:03
+,Reg Prg,130000000,00,9303,Safe School Program,Mr. Chris White,2300 Benton Rd,2300 Benton Rd,Mount Vernon,62864 6132,618316-7071,6-12,116,58,12,A,170017402811,http://www.roe25.com,20240420 05:00:03
+,Reg Prg,130000000,00,9401,Clnton/Mrn/Wshngtn Pre-Kind Prog,Mrs. Jill Wardlow,1710 Broadway St,,Mount Vernon,62864 2930,618244-8040,P,116,58,12,A,170017402456,http://www.roe13.k12.il.us,20240420 05:00:03
+,ROE,160000000,00,0000,De Kalb ROE,Hon. Amanda Christensen,2500 N Annie Glidden Rd Ste C,,Dekalb,60115 1310,815217-0460,P-12,076,38,14,1,1700178,http://www.dekalbcounty.org/roe,20240420 05:00:03
+,Reg Prg,160000000,00,9301,KEC Central EFE 170,Mr. Tom Crouch,PO Box 263,21255 Malta Rd,Malta,60150 0263,815825-2000,7-12,074,37,14,A,170017802632,http://www.kecprograms.com,20240420 05:00:03
+,ROE,170000000,00,0000,DeWitt/Livingstn/Logan/McLean ROE,Hon. Mark E Jontry,201 E Grove St Ste 300,,Bloomington,61701 7628,309888-5120,7-12,091,46,17,1,1700177,,20240420 05:00:03
+,Reg Prg,170000000,00,9301,Safe School Program,Mark Jontry,408 W Washington St,,Bloomington,61701 3808,309828-5807,7-12,091,46,17,A,170017702636,http://rasblm.org/,20240420 05:00:03
+,Reg Prg,170000000,00,9501,Regional Alop School,Mark Jontry,408 W Washington St,,Bloomington,61701 3808,309828-5807,7-12,091,46,17,A,170017705694,,20240420 05:00:03
+,Reg Prg,170000000,00,9502,Central Illinois Bridge Academy,Trisha Malott,2000 Jacobssen Dr,,Normal,61761 6277,309888-5120,7-12,105,53,18,A,170017706853,,20240420 05:00:03
+,ROE,190000000,00,0000,DuPage ROE,Mrs. Amber Quirk,421 N County Farm Rd,,Wheaton,60187 3978,630407-5800,6-12,047,24,03,1,1700179,http://www.dupageroe.org,20240420 05:00:03
+,Reg Prg,190000000,00,9301,Partners for Success-Old Mill Sch,Mrs. Amber Quirk,848 N Mill Rd,,Addison,60101 1257,630543-4222,6-12,077,39,03,A,170017902654,http://www.dupageroe.org,20240420 05:00:03
+,Reg Prg,190000000,00,9501,DuPage Alop,Mrs. Amber Quirk,848 N Mill Rd,,Addison,60101 1257,630386-6781,9-12,077,39,03,A,170017905696,http://www.dupageroe.org,20240420 05:00:03
+,ROE,200000000,00,0000,Edw/Glt/Hlt/Hdn/Pop/Sln/Wbh/Wn/Wh ROE,Hon. Elizabeth A Rister,512 N Main St,,Harrisburg,62946 1056,618253-5581,6-12,117,59,12,1,1700180,,20240420 05:00:03
+,Reg Prg,200000000,00,9201,ROE 20 Learning Alt Branch School,Mrs. Cindy Baumgart,305 S Powell St,,Norris City,62869 1152,618387-0107,6-12,117,59,12,A,170018002658,,20240420 05:00:03
+,Reg Prg,200000000,00,9301,ROE 20 Learning Alternative Branch School,Mrs. Cindy Baumgart,305 S Powell St,305 S Powell St,Norris City,62869 1152,618387-0107,6-12,117,59,12,A,170018002669,,20240420 05:00:03
+,ROE,210000000,00,0000,Frankln/Johnsn/Massc/Willimsn ROE,Hon. Lorie LeQuatte,901 Public Square,,Benton,62812 1300,618438-9711,4-12,116,58,12,1,1700182,http://www.roe21.org,20240420 05:00:03
+,Reg Prg,210000000,00,9201,Project Echo,Mrs. Lorie LeQuatte,PO Box 238,17428 Route 37,Johnston City,62951 0238,618983-6628,7-12,117,59,12,A,170018202670,http://www.roe21.org,20240420 05:00:03
+,Reg Prg,210000000,00,9202,ECHO Juvenile Detention Ctr Program,Mrs. Lorie LeQuatte,409 E Washington St,,Benton,62812 2180,618983-6628,4-12,116,58,12,A,170018206181,,20240420 05:00:03
+,Reg Prg,210000000,00,9301,Starquest Acad RSSP North,Mrs. Lorie LeQuatte,PO Box 303,17428 Route 37,Johnston City,62951 0303,618983-6628,6-8,117,59,12,A,170018202674,http://www.roe21.org,20240420 05:00:03
+,Reg Prg,210000000,00,9303,Starquest Acad RSSP South,Mrs. Lorie LeQuatte,109 E 5Th St,,Metropolis,62960,618342-6778,6-12,117,59,12,A,170018202270,,20240420 05:00:03
+,ROE,240000000,00,0000,Grundy/Kendall ROE,Hon. Christopher D Mehochko,1320 Union St,,Morris,60450 2426,815941-3247,6-12,075,38,16,1,1700184,http://www.roe24.org,20240420 05:00:03
+,Reg Prg,240000000,00,9201,Premier Academy Morris TAOEP,Mrs. Meghan S Martin,7700 Ashley Rd,,Morris,60450 9303,815416-0377,6-12,075,38,16,A,170018406203,https://premieracademymorris.org/,20240420 05:00:03
+,Reg Prg,240000000,00,9301,Premier Academy Morris,Mrs. Meghan S Martin,7700 Ashley Rd,,Morris,60450 9303,815416-0377,6-12,075,38,16,A,170018402707,https://premieracademymorris.org/,20240420 05:00:03
+,Reg Prg,240000000,00,9306,YEA Program,Mrs. Megan Martinez,709 Game Farm Rd,,Yorkville,60560,630553-4382,9-12,075,38,14,A,170018402725,,20240420 05:00:03
+,Reg Prg,240000000,00,9307,Oswego GOAL,Ms. Meredith Gerardot,4209 State Route 71,,Oswego,60543 8342,630636-3915,6-12,075,38,14,A,170018402767,,20240420 05:00:03
+,Reg Prg,240000000,00,9309,Minooka Academy,Carol Bradford,101 W Wapella St,,Minooka,60447,815521-2371,9-12,075,38,16,A,170018405892,,20240420 05:00:03
+,Reg Prg,240000000,00,9312,FLEX Program,Mr. James Seput,704 W Abe St,,Plano,60545 1180,630552-3178,9-12,075,38,14,A,170018406225,,20240420 05:00:03
+,ROE,260000000,00,0000,Hancck/Fultn/Schuylr/McDonogh ROE,Hon. John Meixner,130 S Lafayette St Ste 200,,Macomb,61455 2280,309575-3226,6-12,071,36,17,1,1700186,http://www.roe26.net,20240420 05:00:03
+,Reg Prg,260000000,00,9201,ROYALS Academy Carthage,Hon. John Meixner,86 S Madison St,,Carthage,62321 1331,309575-3226,6-12,094,47,15,A,170018602815,http://www.roe26.net,20240420 05:00:03
+,Reg Prg,260000000,00,9202,ROYALS Academy Macomb,Hon. John Meixner,341 S Johnson St,,Macomb,61455 2138,309575-3226,6-12,071,36,17,A,170018602819,http://www.roe26.net,20240420 05:00:03
+,Reg Prg,260000000,00,9203,ROYALS Academy Canton,Hon. John Meixner,749 E Locust St,,Canton,61520 2063,309575-3226,6-12,094,47,17,A,170018602681,,20240420 05:00:03
+,Reg Prg,260000000,00,9301,ROYALS RSSP Macomb,Hon. John Meixner,341 S Johnson St,,Macomb,61455 2138,309575-3226,6-12,071,36,17,A,170018602822,http://www.roe26.net,20240420 05:00:03
+,Reg Prg,260000000,00,9302,ROYALS RSSP Carthage,Hon. John Meixner,86 S Madison St,,Carthage,62321 1331,309575-3226,6-12,094,47,15,A,170018602823,http://www.roe26.net,20240420 05:00:03
+,Reg Prg,260000000,00,9303,ROYALS RSSP Canton,Hon. John Meixner,749 E Locust St,,Canton,61520 2063,309575-3226,6-12,094,47,17,A,170018602685,,20240420 05:00:03
+,ROE,280000000,00,0000,Bureau/Henry/Stark ROE,Hon. Angie Zarvell,107 S State St,,Atkinson,61235 9788,309936-7890,6-12,073,37,16,1,1700168,,20240420 05:00:03
+,Reg Prg,280000000,00,9301,Reg'l Safe School Program ROE #28,Mrs. Kathy Marshall,107 S State St,107 S State St,Atkinson,61235 9788,309936-7890,6-12,073,37,16,A,170016804775,,20240420 05:00:03
+,ROE,300000000,00,0000,Alxndr/Jcksn/Pulsk/Prry/Union ROE,Hon. Matthew Hickam,1001 Walnut St,,Murphysboro,62966 2177,618687-7290,P-12,115,58,12,1,1700190,,20240420 05:00:03
+,Reg Prg,300000000,00,9201,Jackson/Perry Project SOAR MS TAOEP,Ms. Sherri Schimpf,1725B Shomaker Dr,,Murphysboro,62966 2507,618687-7290,6-8,115,58,12,A,170019006321,http://www.roe30.org,20240420 05:00:03
+,Reg Prg,300000000,00,9202,Five County Regional Alternative,Hon. Matthew Hickam,1001 Walnut Street,,Murphysboro,62966,618687-7290,6-12,115,58,12,A,170019002265,http://www.roe02.com,20240420 05:00:03
+,Reg Prg,300000000,00,9301,Cope Alternative School,Ms. Sherri Schimpf,1725B Shomaker Dr,,Murphysboro,62966 2507,618687-7290,6-12,115,58,12,A,170019002866,,20240420 05:00:03
+,Reg Prg,300000000,00,9501,Project SOAR Alternative Optional Ed Program,Ms. Sherri Schimpf,1725B Shomaker Dr,,Murphysboro,62966 2507,618687-7290,9-12,115,58,12,A,170019006336,http://www.roe30.org,20240420 05:00:03
+,ROE,310000000,00,0000,Kane ROE,Hon. Patricia Dal Santo,28 N 1st St,,Geneva,60134 2285,630232-5955,4-12,083,42,11,1,1700191,http://www.kaneroe.org,20240420 05:00:03
+,Reg Prg,310000000,00,9301,New Beginnings Regional Safe Schools Program,Mrs. Deanna Oliver,46 S Gifford St,,Elgin,60120 6522,630232-5963,6-12,043,22,08,A,170019102878,http://www.kaneroe.org,20240420 05:00:03
+,Reg Prg,310000000,00,9302,East Aurora HS RSSP,Mrs. Deanna Oliver,1685 N Farnsworth Ave,,Aurora,60505 1509,630232-5963,6-12,050,25,11,A,170019106186,,20240420 05:00:03
+,Reg Prg,310000000,00,9303,Mades-Johnstone RSSP,Mrs. Deanna Oliver,1304 Ronzheimer Ave,,St Charles,60174 4450,630232-5963,6-12,065,33,11,A,170019106185,http://www.kaneroe.org,20240420 05:00:03
+,Reg Prg,310000000,00,9304,Oak Ridge RSSP,Mrs. Deanna Oliver,300 Cleveland Ave,,Carpentersville,60110 1977,630232-5963,6-12,066,33,08,A,170019106184,,20240420 05:00:03
+,Reg Prg,310000000,00,9305,West Aurora HS RSSP,Mrs. Deanna Oliver,1870 W Galena Blvd,,Aurora,60506 4356,630232-5963,6-12,083,42,11,A,170019106187,,20240420 05:00:03
+,Reg Prg,310000000,00,9501,New Directions Program,Mrs. Lisa Palese,1304 Ronzheimer Ave,,St Charles,60174 4450,331228-4873,4-12,065,33,11,A,170019106239,http://www.kaneroe.org,20240420 05:00:03
+,Reg Prg,310000000,00,9502,SUCCESS Academy,Mrs. Marti Neahring,1870 W Galena Blvd,,Aurora,60506 4356,630301-5050,6-12,083,42,11,A,170019106387,,20240420 05:00:03
+,Reg Prg,310000000,00,9503,PAWS,Mrs. Natalie Assell,1201 Main St,,Batavia,60510 1607,630937-8600,9-12,083,42,11,A,170019106417,,20240420 05:00:03
+,Reg Prg,310000000,00,9504,Success Academy,Mr. Matthew Langton,100 Cleveland Ave,,Carpentersville,60110 1960,847484-2100,6-12,066,33,08,A,170019106418,,20240420 05:00:03
+,Reg Prg,310000000,00,9505,Success Academy HS,Ms. Katie Wishowski-Wetzel,1500 Kings Rd,,Carpentersville,60110 1480,847484-5000,9-12,043,22,08,A,170019106435,,20240420 05:00:03
+,Reg Prg,310000000,00,9506,DREAM Academy,Mary Mangione,46 S Gifford St,,Elgin,60120 6522,847888-5000,7-12,043,22,08,A,170019106416,,20240420 05:00:03
+,Reg Prg,310000000,00,9507,Success Academy 4-5,Ms. Katherine Keafer,2550 Harnish Dr,,Algonquin,60102 6870,847551-8410,4-5,066,33,09,A,170019106530,http://www.d300.org,20240420 05:00:03
+,Reg Prg,310000000,00,9508,PAWS Academy,Mrs. Natalie Assell,1501 S Raddant Rd,,Batavia,60510 8366,630937-8000,6-8,050,25,11,A,170019106547,http://www.bps101.net,20240420 05:00:03
+,Reg Prg,310000000,00,9509,Northeast Academy East,Ms. Aubree Schuett,201 S 7th St,,St Charles,60174 2664,331228-2000,9-12,083,42,08,A,170019106546,,20240420 05:00:03
+,Reg Prg,310000000,00,9510,Northeast Academy North,Ms. Aubree Schuett,201 S 7th St,,St Charles,60174 2664,331228-2000,9-12,083,42,08,A,170019106535,,20240420 05:00:03
+,Reg Prg,310000000,00,9511,New Directions - Geneva,Mr. Tom Rogers,416 McKinley Ave,,Geneva,60134 1200,630463-3800,6-12,083,42,11,A,170019106545,,20240420 05:00:03
+,Reg Prg,310000000,00,9512,ALOP,Patrick  Podgorski,44W625 Plato Rd # R,,Burlington,60109,847464-6000,9-12,065,33,11,A,170019106783,,20240420 05:00:03
+,Reg Prg,310000000,00,9513,Compass Academy,Ms. Sharon Stanley,305 S 9Th St,,St Charles,60174 2667,331228-3400,9-12,083,42,08,A,170019106849,,20240420 05:00:03
+,ROE,320000000,00,0000,Iroquois/Kankakee ROE,Hon. Frank Petkunas,1 Stuart Dr,,Kankakee,60901 8947,815937-2950,6-12,079,40,02,1,1700189,http://www.i-kan.org,20240420 05:00:03
+,Reg Prg,320000000,00,9201,Salt School,Hon. Frank Petkunas,50 W Industrial Dr,,Kankakee,60901 8133,815935-7282,9-12,079,40,02,A,170018905710,,20240420 05:00:03
+,Reg Prg,320000000,00,9301,I Kan Regional Alternatve Att Ctr,Hon. Frank Petkunas,50 W Industrial Dr,,Kankakee,60901 8133,815933-4918,6-12,079,40,02,A,170018902916,,20240420 05:00:03
+,ROE,330000000,00,0000,Henderson/Knox/Mercer/Warren ROE,Hon. Jodi Scott,932 Harrison St,932 Harrison St,Galesburg,61401 4018,309734-6822,P-12,071,36,17,1,1700192,,20240420 05:00:03
+,Reg Prg,330000000,00,9201,RAES Night School,Hon. Jodi Scott,932 Harrison St,,Galesburg,61401 4018,309345-3828,6-12,071,36,17,A,170019206069,,20240420 05:00:03
+,Reg Prg,330000000,00,9202,RAES West Alt Ed,Hon. Jodi Scott,932 Harrison St,,Galesburg,61401 4018,309734-3818,6-12,071,36,17,A,170019204060,,20240420 05:00:03
+,Reg Prg,330000000,00,9203,RAES East Alt Ed,Mr. Joseph McQueen,932 Harrison St,,Galesburg,61401 4018,309345-3828,6-12,071,36,17,A,170019206383,,20240420 05:00:03
+,Reg Prg,330000000,00,9301,RAES RSSP,Hon. Jodi Scott,932 Harrison St,,Galesburg,61401 4018,309345-3828,6-12,071,36,17,A,170019202923,,20240420 05:00:03
+,Reg Prg,330000000,00,9302,RAES West,Hon. Jodi Scott,932 Harrison St,,Galesburg,61401 4018,309734-3818,6-12,071,36,17,A,170019202826,,20240420 05:00:03
+,ROE,340000000,00,0000,Lake ROE,Dr. Michael Karner,300 Center Dr Ste 100,,Vernon Hills,60061 1525,847543-7833,P-12,059,30,10,1,1700193,http://www.lake.k12.il.us,20240420 05:00:03
+,Reg Prg,340000000,00,9301,ROE Alternative Prog of Lake Co,Mr. Andrew  Carlson,300 Center Dr Ste 300,300 Center Dr Ste 300,Vernon Hills,60061 1525,847543-7833,6-12,059,30,10,A,170019302965,http://www.lake.k12.il.us,20240420 05:00:03
+,Reg Prg,340000000,00,9501,Lake Co Collaborative Alop,Dr. Carol DuClos,18160 W Gages Lake Rd,,Grayslake,60030 1819,847548-8470,7-12,061,31,10,A,170019305829,,20240420 05:00:03
+,Reg Prg,340000000,00,9502,Wauconda CUSD 118 ALOP,Dr. Julia Nadler,555 N Main St,,Wauconda,60084 1229,847526-7950,9-10,052,26,11,A,170019306229,http://www.d118.org,20240420 05:00:03
+,Reg Prg,340000000,00,9503,Bridges Program ALOP,Christopher J Geocaris,34090 N Almond Rd,,Gurnee,60031 5310,847548-7103,9-12,061,31,10,A,,,20240420 05:00:03
+,Reg Prg,340000000,00,9504,Lake County Cooperative ALOP,Valerie Donnan,18160 W Gages Lake Rd,,Gages Lake,60030 1819,847986-2368,6-12,061,31,10,A,,,20240420 05:00:03
+,Reg Prg,340000000,00,9505,Round Lake ALOP,Dr. Eric Apgar,811 Sunset Dr,,Round Lake,60073 2827,224842-2075,6-12,062,31,10,A,,,20240420 05:00:03
+,ROE,350000000,00,0000,La Salle/Marshall/Putnam ROE,Hon. Christopher B Dvorak,119 W Madison St Ste 102,,Ottawa,61350 5015,815434-0780,6-12,076,38,14,1,1700194,http://www.roe35.org/,20240420 05:00:03
+,Reg Prg,350000000,00,9202,LMP ROE TAOEP,Ms. Jennifer Ferguson,2233 6Th St Ste 2,,Peru,61354 2516,815220-3560,6-12,076,38,14,A,170019406330,http://www.roe35.org,20240420 05:00:03
+,Reg Prg,350000000,00,9301,LMP ROE,Ms. Jennifer Ferguson,2233 6th St,,Peru,61354 2516,815220-3560,6-12,076,38,14,A,170019402993,,20240420 05:00:03
+,Reg Prg,350000000,00,9501,LMP ROE ALOP,Mrs. Jennifer Ferguson,2233 6Th St Ste 2,,Peru,61354 2532,815220-3557,6-12,076,38,14,A,170019406848,,20240420 05:00:03
+,Reg Prg,350000000,00,9502,LMP Regional Office of Education,Ryan Myers,119 W Madison St Ste 102,,Ottawa,61350 5015,815434-0780,4-12,076,38,14,A,,,20240420 05:00:03
+,Reg Prg,350000000,00,9503,ROE 35 Academy,Jennifer Ferguson,2233 6Th St Ste 2,,Peru,61354 2532,815220-3560,4-12,076,38,14,A,,,20240420 05:00:03
+,ROE,390000000,00,0000,Macon/Piatt ROE,Hon. Jill R Reedy,3433 Rupp Pkwy,,Decatur,62526 2124,217872-3721,K-12,096,48,13,1,1700197,http://www.roe39.org,20240420 05:00:03
+,Reg Prg,390000000,00,9201,Futures Unlimited,Mr. Brian Plummer,3900 N Neely Ave,,Decatur,62526 1915,217362-3080,9-12,096,48,13,A,170019703048,http://www.futuresunlimited39.org,20240420 05:00:03
+,Reg Prg,390000000,00,9301,Milligan Academy Rssp,Mr. Brian Plummer,3900 N Neely Ave,,Decatur,62526 1915,217362-3085,6-11,096,48,13,A,170019703057,http://www.milliganacademy39.org,20240420 05:00:03
+,ROE,400000000,00,0000,Calhoun/Greene/Jersy/Macoupin ROE,Hon. Michelle Mueller,227 E 1St South St,,Carlinville,62626 1800,217854-4016,P-12,108,54,13,1,1700169,http://www.roe40.com,20240420 05:00:03
+,Reg Prg,400000000,00,9201,ROE Alternative Education Center-Macoupin,Hon. Michelle Mueller,506 N High St,,Carlinville,62626 1351,217854-7733,10-12,108,54,13,A,170016903058,,20240420 05:00:03
+,Reg Prg,400000000,00,9202,ROE Alternative Education Center-Greene,Hon. Michelle Mueller,250 E Sherman St,,White Hall,62092 1359,217374-2411,10-12,100,50,15,A,170016903091,,20240420 05:00:03
+,Reg Prg,400000000,00,9301,ROE Safe Sch Macoupin,Hon. Michelle Mueller,506 N High St,,Carlinville,62626 1351,217854-7733,6-12,108,54,13,A,170016903098,http://www.roe40ace.weebly.com,20240420 05:00:03
+,Reg Prg,400000000,00,9302,ROE Safe Sch Greene,Hon. Michelle Mueller,250 E Sherman St,,White Hall,62092 1359,217374-2411,6-12,100,50,15,A,170016903099,http://www.roe40ace.weebly.com,20240420 05:00:03
+,Reg Prg,400000000,00,9303,ROE Safe School Jersey,Hon. Michelle Mueller,227 E 1St South St,,Carlinville,62626 1800,217854-4016,6-12,108,54,13,A,170016906623,,20240420 05:00:03
+,ROE,410000000,00,0000,Madison ROE,Robert Werden,157 N Main St Ste 438,,Edwardsville,62025 1960,618296-4530,6-12,112,56,13,1,1700198,http://www.roe41.org,20240420 05:00:03
+,Reg Prg,410000000,00,9303,Center for Educ Opp,Robert Werden,201 Staunton Rd,,Troy,62294 1227,618667-0633,6-12,109,55,15,A,170019805989,,20240420 05:00:03
+,ROE,440000000,00,0000,McHenry ROE,Ms. Diana Hartmann,408 S Il Route 31,,Mchenry,60050 5419,815334-4475,6-12,063,32,11,1,1700200,http://www.mchenryroe.org,20240420 05:00:03
+,Reg Prg,440000000,00,9301,Evergreen Academy,Ms. Diana Hartmann,3917 Mercy Dr,,Mchenry,60050 3151,815334-4055,6-12,069,35,11,A,170020003117,https://www.mchenrycountyil.gov/county-government/regional-office-of-education,20240420 05:00:03
+,Reg Prg,440000000,00,9501,Innovation Academy,Ryan Hawkins,3917 Mercy Dr,,Mchenry,60050 3151,815239-0001,4-12,063,32,11,A,(Pending),,20240420 05:00:03
+,ROE,450000000,00,0000,Monroe/Randolph ROE,Hon. Kelton Davis,134 N Main St,,Red Bud,62278 1072,618680-0154,6-12,115,58,12,1,1700202,,20240420 05:00:03
+,Reg Prg,450000000,00,9201,CCSI Alternative School,Mr. Kelton Davis,6137 Beck Rd,,Red Bud,62278 3347,618473-2222,9-12,115,58,12,A,170020203189,,20240420 05:00:03
+,Reg Prg,450000000,00,9301,Monroe/Randolph Red Brick Sch,Hon. Kelton Davis,134 N Main St,134 N Main St,Red Bud,62278 1072,618680-0154,6-12,115,58,12,A,170020203193,,20240420 05:00:03
+,ROE,470000000,00,0000,Lee/Ogle/Whiteside ROE,Hon. Christopher Tennyson,2214 E 4Th St Ste B,,Sterling,61081 3046,815625-1495,4-12,074,37,17,1,1700195,http://www.leeogle.org,20240420 05:00:03
+,Reg Prg,470000000,00,9301,Rock River Challenge,Mr. Terry Camplain,PO Box 91,204 Main St,Chana,61015 8700,815732-4664,6-12,074,37,16,A,170019504852,http://www.ocecil.org,20240420 05:00:03
+,Reg Prg,470000000,00,9304,Regional Center for Change,Mr. Mark Morris,500 E 5Th St,500 E 5th St,Rock Falls,61071 1804,815564-2032,6-12,074,37,17,A,170019503325,https://www.roe47.org/,20240420 05:00:03
+,Reg Prg,470000000,00,9501,Regional Center For Change ALOP Program,Mr. Mark Morris,500 E 5Th St,500 E 5Th St,Rock Falls,61071 1804,815564-2032,6-12,074,37,17,A,170019505735,https://www.roe47.org/,20240420 05:00:03
+,Reg Prg,470000000,00,9502,Morrison Alt Learning Program,Mr. Cory Bielema,300 Academic Dr,,Morrison,61270 2952,815772-7264,9-12,074,37,17,A,170019506388,http://roe47.org,20240420 05:00:03
+,ROE,480000000,00,0000,Peoria ROE,Hon. Elizabeth A Crider,324 Main St Rm 401,,Peoria,61602 2302,309672-6906,6-12,092,46,17,1,1700203,http://www.peoriaroe.org,20240420 05:00:03
+,Reg Prg,480000000,00,9201,Peoria Regional High School,Ms. Teresa VonRohr,908 N Sterling Ave,,West Peoria,61604 5000,309495-6800,9-12,093,47,16,A,170020306202,,20240420 05:00:03
+,Reg Prg,480000000,00,9301,Greeley Alternative School,Hon. Elizabeth A Crider,3202 N Wisconsin Ave,,Peoria,61603 1260,309282-1919,6-12,092,46,17,A,170020305736,,20240420 05:00:03
+,ROE,490000000,00,0000,Rock Island ROE,Hon. Tammy L Muerhoff,3430 Avenue of The Cities,,Moline,61265 4417,309736-1111,6-12,072,36,17,1,1700204,http://www.riroe.com,20240420 05:00:03
+,Reg Prg,490000000,00,9302,Coolidge RSSP,Mr. Andrew Bullock,3428 Avenue of The Cities,,Moline,61265 4417,309743-8587,7-8,072,36,17,A,170020406201,http://www.molineschools.org,20240420 05:00:03
+,ROE,500000000,00,0000,Saint Clair ROE,Hon. Lori Costello,1000 S Illinois St,,Belleville,62220 2537,618825-3900,5-12,113,57,13,1,1700208,,20240420 05:00:03
+,Reg Prg,500000000,00,9301,Saint Clair Co ROE Safe School,Mrs. Stacy Louderman,1722 W Main St,,Belleville,62226 7474,618233-6874,5-12,113,57,13,A,170020803239,,20240420 05:00:03
+,ROE,510000000,00,0000,Menard/Sangamon ROE,Hon. Shannon C Fehrholz,2201 S Dirksen Pkwy,,Springfield,62703 4564,217753-6620,7-12,096,48,13,1,1700206,http://www.roe51.org,20240420 05:00:03
+,Reg Prg,510000000,00,9201,Sangamon County Learning Academy,Julie Sullivan,2201 Toronto Rd Ste C,,Springfield,62712 3810,217529-3390,6-12,095,48,13,A,170020603258,,20240420 05:00:03
+,Reg Prg,510000000,00,9301,Sangamon Safe School Program,Dr. Mary Loken,2201 Toronto Rd,,Springfield,62712 3802,217585-8090,7-12,095,48,13,A,170020603267,,20240420 05:00:03
+,Reg Prg,510000000,00,9501,PROJECT IMPACT,Mrs. Shannon Fehrholz,2201 S Dirksen Pkwy,,Springfield,62703 4564,217535-3617,4-8,096,48,13,A,170020606764,,20240420 05:00:03
+,ROE,530000000,00,0000,Mason/Tazewell/Woodford ROE,Hon. Jeffrey Shane Ekena,2400 N Main St Ste C,,East Peoria,61611 1735,309477-2290,P-12,093,47,16,1,1700209,http://www.roe53.net,20240420 05:00:03
+,Reg Prg,530000000,00,9202,ROE 53 Academy,Mrs. Julie Grant,110 Fandel Rd,,Germantwn Hls,61548 9354,309383-3002,9-12,073,37,16,A,170020906194,,20240420 05:00:03
+,Reg Prg,530000000,00,9301,ROE 53 Safe School,Mrs. Julie Grant,110 Fandel Rd,,Germantwn Hls,61548 9354,309383-3002,6-12,073,37,16,A,170020904502,,20240420 05:00:03
+,ROE,540000000,00,0000,Vermilion ROE,Mr. Aaron Hird,200 S College St Ste B,,Danville,61832 6744,217431-2668,6-12,104,52,02,1,1700211,,20240420 05:00:03
+,Reg Prg,540000000,00,9201,Middlefork School TAOEP,Mrs. Kristin Dunker,15009 Catlin Tilton Rd,,Danville,61834 5176,217443-8273,6-12,104,52,02,A,170021106844,,20240420 05:00:03
+,Reg Prg,540000000,00,9301,Middlefork School RSSP,Mrs. Kristin Dunker,15009 Catlin Tilton Rd,,Danville,61834 5176,217443-8273,6-12,104,52,02,A,170021103291,,20240420 05:00:03
+,ROE,560000000,00,0000,Will ROE,Hon. Lisa Caparelli Ruff,116 N Chicago St Ste 400,,Joliet,60432 4204,815740-8360,P-12,086,43,14,1,1700213,http://www.willroe.org,20240420 05:00:03
+,Reg Prg,560000000,00,9202,Lincoln School TAOEP,Mr. Scott Pritchard,960 Royce Ave,,Joliet,60432 1277,815774-8900,6-12,086,43,14,A,170021306059,http://www.lincolnroe56.com,20240420 05:00:03
+,Reg Prg,560000000,00,9301,Lincoln School RSSP,Mr. Scott Pritchard,960 Royce Ave,,Joliet,60432 1277,815774-8900,6-12,086,43,14,A,170021304927,http://www.lincolnroe56.com/,20240420 05:00:03
+,Reg Prg,560000000,00,9501,Lincoln School ALOP,Mr. Scott Pritchard,960 Royce Ave,,Joliet,60432 1277,815774-8900,6-12,086,43,14,A,170021306192,http://www.lincolnroe56.com,20240420 05:00:03
