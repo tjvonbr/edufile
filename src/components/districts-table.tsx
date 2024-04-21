@@ -31,14 +31,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { User } from "@prisma/client";
+import { SchoolDistrict, User } from "@prisma/client";
 import { Checkbox } from "./ui/checkbox";
 import { Input } from "./ui/input";
-import { formatDate } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { userRoles } from "@/lib/consts";
 
-export const columns: ColumnDef<User>[] = [
+export const columns: ColumnDef<SchoolDistrict>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -62,37 +61,19 @@ export const columns: ColumnDef<User>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "firstName",
-    header: "First name",
-    cell: ({ row }) => (
-      <div className="capitalize">{row.getValue("firstName")}</div>
-    ),
-  },
-  {
-    accessorKey: "lastName",
+    accessorKey: "name",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Last name
+          Name
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
     },
-    cell: ({ row }) => <div>{row.getValue("lastName")}</div>,
-  },
-  {
-    accessorKey: "role",
-    header: () => <div className="text-right">Role</div>,
-    cell: ({ row }) => {
-      return (
-        <div className="text-right font-medium">
-          {userRoles[row.getValue("role") as keyof typeof userRoles]}
-        </div>
-      );
-    },
+    cell: ({ row }) => <div>{row.getValue("name")}</div>,
   },
   {
     id: "actions",
@@ -121,11 +102,11 @@ export const columns: ColumnDef<User>[] = [
   },
 ];
 
-interface PatientTableProps {
-  users: User[];
+interface DistrictTableProps {
+  districts: SchoolDistrict[];
 }
 
-export function UserTable({ users }: PatientTableProps) {
+export function DistrictsTable({ districts }: DistrictTableProps) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
@@ -137,7 +118,7 @@ export function UserTable({ users }: PatientTableProps) {
   const router = useRouter();
 
   const table = useReactTable({
-    data: users,
+    data: districts,
     columns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
@@ -159,12 +140,10 @@ export function UserTable({ users }: PatientTableProps) {
     <div className="w-full">
       <div className="flex items-center py-4">
         <Input
-          placeholder="Filter by last name..."
-          value={
-            (table.getColumn("lastName")?.getFilterValue() as string) ?? ""
-          }
+          placeholder="Filter by district..."
+          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
-            table.getColumn("lastName")?.setFilterValue(event.target.value)
+            table.getColumn("name")?.setFilterValue(event.target.value)
           }
           className="max-w-sm"
         />
