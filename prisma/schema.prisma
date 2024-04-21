@@ -41,11 +41,11 @@ model RegionalOffice {
 
 model SchoolDistrict {
   id                  String          @id @default(uuid())
-  stateId             String          @unique
-  ncesDistrictId      String          @unique
-  name                String          @unique
-  regionalOfficeId    String
-  regionalOffice      RegionalOffice  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
+  stateId             String          @unique      
+  ncesDistrictId      String          
+  name                String          
+  regionalOfficeId    String?
+  regionalOffice      RegionalOffice?  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
 
   @@map("school_districts")
 }
