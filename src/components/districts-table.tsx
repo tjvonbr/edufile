@@ -201,7 +201,7 @@ export function DistrictsTable({ districts }: DistrictTableProps) {
                   key={row.id}
                   className="hover:cursor-pointer"
                   data-state={row.getIsSelected() && "selected"}
-                  onClick={() => router.push(`patients/${row.original.id}`)}
+                  onClick={() => router.push(`districts/${row.original.id}`)}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>

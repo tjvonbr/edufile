@@ -22,15 +22,15 @@ export interface NavItem {
 export const dashboardConfig = {
   sidebarNav: [
     {
-      title: "Districts",
-      href: "/districts",
-      icon: "district",
-      disabled: false,
-    },
-    {
       title: "Regional Offices",
       href: "/regional-offices",
       icon: "office",
+      disabled: false,
+    },
+    {
+      title: "Districts",
+      href: "/districts",
+      icon: "district",
       disabled: false,
     },
     {
