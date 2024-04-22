@@ -11,6 +11,12 @@ export async function main() {
           stateId: district["State ID"],
           ncesDistrictId: district["NCES LEA ID"],
           name: district["District Name"],
+          phone: district["Telephone"],
+          mailingAddress: district["Mailing Address"],
+          city: district["City"],
+          state: district["State"],
+          zip: district["Zip Code"],
+          zipPlusFour: district["Zip +4"],
         },
       });
     } catch (error) {

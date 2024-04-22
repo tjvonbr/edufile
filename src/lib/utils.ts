@@ -16,3 +16,18 @@ export function formatDate(date: Date) {
 
   return [year, month, day].join("-");
 }
+
+export function formatPhoneNumber(phoneNumber: string) {
+  const cleanNumber = phoneNumber.replace(/\D/g, "");
+
+  if (cleanNumber.length !== 10) {
+    return "Invalid phone number";
+  }
+
+  const formattedNumber = cleanNumber.replace(
+    /(\d{3})(\d{3})(\d{4})/,
+    "$1-$2-$3"
+  );
+
+  return formattedNumber;
+}

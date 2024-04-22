@@ -41,13 +41,48 @@ model RegionalOffice {
   @@map("regional_offices")
 }
 
+model ComplianceRequirement {
+  id                String              @id @default(uuid())
+  name              String              
+  year              Int
+  attachmentUrl     String?
+  schoolDistricts   DistrictComplianceRequirements[]
+
+  @@map("compliance_requirements")
+}
 model SchoolDistrict {
-  id                  String          @id @default(uuid())
-  stateId             String           
-  ncesDistrictId      String          
-  name                String          
-  regionalOfficeId    String?
-  regionalOffice      RegionalOffice?  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
+  id                          String            @id @default(uuid())
+  stateId                     String           
+  ncesDistrictId              String 
+  name                        String
+  administrator               String?
+  phone                       String?
+  mailingAddress              String?
+  city                        String?
+  state                       String?
+  zip                         String?
+  zipPlusFour                 String?
+  regionalOfficeId            String?
+  regionalOffice              RegionalOffice?  @relation(fields: [regionalOfficeId], references: [id], onDelete: Cascade)
+  complianceRequirements      DistrictComplianceRequirements[]
 
   @@map("school_districts")
+}
+
+enum ComplianceRequirementStatus {
+  INCOMPLETE
+  UNDER_REVIEW
+  APPROVED
+  REJECTED
+}
+
+model DistrictComplianceRequirements {
+  id                          String                        @id @default(uuid())
+  schoolDistrictId            String
+  schoolDistrict              SchoolDistrict                @relation(fields: [schoolDistrictId], references: [id], onDelete: Cascade)
+  complianceRequirementId     String
+  complianceRequirement       ComplianceRequirement         @relation(fields: [complianceRequirementId], references: [id], onDelete: Cascade)
+  status                      ComplianceRequirementStatus   @default(INCOMPLETE)
+
+  @@map("district_compliance_requirements")
 }
