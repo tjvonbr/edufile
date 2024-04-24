@@ -6,7 +6,6 @@ import { ComplianceRequirementStatus } from "@prisma/client";
 import { Badge } from "../ui/badge";
 import { Input } from "../ui/input";
 import { requirementStatusMap } from "@/lib/consts";
-import { Label } from "../ui/label";
 import Link from "next/link";
 
 interface RequirementCardProps {
@@ -14,9 +13,7 @@ interface RequirementCardProps {
 }
 
 export function RequirementCard({ requirement }: RequirementCardProps) {
-  console.log(requirement);
   const [file, setFile] = useState<any>(null);
-  console.log(file);
 
   function handleReqStatus() {
     if (
@@ -51,8 +48,6 @@ export function RequirementCard({ requirement }: RequirementCardProps) {
         method: "POST",
         body: formData,
       });
-
-      console.log(response);
     } catch (error) {
       console.log(error);
     }

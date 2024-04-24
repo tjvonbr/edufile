@@ -10,8 +10,6 @@ export async function POST(req: NextRequest) {
   const file: any = formData.get("file");
   const requirementId: any = formData.get("requirementId");
 
-  console.log(file);
-
   if (!file || !requirementId) {
     return NextResponse.json({ error: "Missing form data." }, { status: 400 });
   }

@@ -4,10 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/ui/icons";
-import { SidebarNavItem } from "@/config/dashboard";
+import { NavItem, SidebarNavItem } from "@/config/dashboard";
+import { User } from "@prisma/client";
 
 interface DashboardNavProps {
-  items: SidebarNavItem[];
+  items: NavItem[];
 }
 
 export default function DashboardNav({ items }: DashboardNavProps) {
