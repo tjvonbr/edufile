@@ -13,6 +13,8 @@
     "seed": "node --loader ts-node/esm prisma/seed.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.556.0",
+    "@aws-sdk/client-signer": "^3.556.0",
     "@hookform/resolvers": "^3.3.4",
     "@prisma/client": "^5.11.0",
     "@radix-ui/react-checkbox": "^1.0.4",
@@ -21,11 +23,13 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "@tanstack/react-table": "^8.15.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "csvtojson": "^2.0.10",
     "lucide-react": "^0.363.0",
+    "multer": "^1.4.5-lts.1",
     "next": "14.1.4",
     "next-auth": "^4.24.7",
     "react": "^18",
@@ -36,6 +40,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/multer": "^1.4.11",
     "@types/node": "^20.12.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
