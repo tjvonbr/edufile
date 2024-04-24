@@ -1,5 +1,5 @@
-import csv from "csvtojson";
 import prisma from "../app/services/prisma.ts";
+import csv from "csvtojson";
 
 export async function main() {
   const districts = await csv().fromFile("./il.csv");

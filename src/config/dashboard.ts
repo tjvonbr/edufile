@@ -1,5 +1,6 @@
 import { User, UserRole } from "@prisma/client";
 import { LucideIcons } from "../components/ui/icons";
+import { UserWithSchoolDistricts } from "@/types";
 
 export interface DashboardConfig {
   sidebarNav: SidebarNavItem[];
@@ -17,17 +18,24 @@ export interface SidebarNavItem {
 export interface NavItem {
   title: string;
   href: string;
+  icon: keyof LucideIcons;
   disabled?: boolean;
 }
 
-function renderUserDashboard(user: User) {
+export function renderUserDashboard(user: UserWithSchoolDistricts): NavItem[] {
   if (user.role === UserRole.DISTRICT_USER) {
     return [
       {
         title: "My district",
-        href: `/districts`,
+        href: `/districts/${user.schoolDistricts[0].id}`,
         icon: "district",
         disabled: false,
+      },
+      {
+        title: "Messages",
+        href: "#",
+        icon: "message",
+        disabled: true,
       },
     ];
   } else if (user.role === UserRole.REGIONAL_ADMIN) {
@@ -39,8 +47,8 @@ function renderUserDashboard(user: User) {
         disabled: false,
       },
     ];
-  } else if (user.role === UserRole.SUPER_ADMIN) {
-    [
+  } else {
+    return [
       {
         title: "Regional Offices",
         href: "/regional-offices",
@@ -70,6 +78,12 @@ export const dashboardConfig = {
       href: "/districts/",
       icon: "district",
       disabled: false,
+    },
+    {
+      title: "Messages",
+      href: "#",
+      icon: "district",
+      disabled: true,
     },
   ],
   sidebarNav: [
