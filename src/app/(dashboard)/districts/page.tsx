@@ -1,8 +1,9 @@
-import { DistrictsTable } from "@/components/districts-table";
+import { DistrictsTable } from "@/components/districts/districts-table";
 import { DashboardHeader } from "@/components/header";
 import { getDistricts } from "@/lib/helpers/districts";
+import { getUserAndDistrictsById } from "@/lib/helpers/users";
 import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export default async function DistrictsPage() {
   const { userId } = auth();
@@ -11,7 +12,15 @@ export default async function DistrictsPage() {
     redirect("/sign-in");
   }
 
-  const districts = await getDistricts(userId);
+  const user = await getUserAndDistrictsById(userId);
+
+  if (!user) {
+    notFound();
+  }
+
+  const reqs = user.regionalOffices[0].schoolDistricts.map(
+    (district) => district.complianceRequirements as any
+  );
 
   return (
     <div className="container flex-col space-y-8">
@@ -19,7 +28,7 @@ export default async function DistrictsPage() {
         heading="Districts"
         text="Create and manage districts."
       />
-      <DistrictsTable districts={districts} />
+      <DistrictsTable districts={user.regionalOffices[0].schoolDistricts} />
     </div>
   );
 }

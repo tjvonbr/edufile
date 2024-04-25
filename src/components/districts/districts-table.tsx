@@ -31,13 +31,19 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { SchoolDistrict, User } from "@prisma/client";
-import { Checkbox } from "./ui/checkbox";
-import { Input } from "./ui/input";
+import {
+  ComplianceRequirementStatus,
+  SchoolDistrict,
+  User,
+} from "@prisma/client";
+import { Checkbox } from "../ui/checkbox";
+import { Input } from "../ui/input";
 import { useRouter } from "next/navigation";
 import { userRoles } from "@/lib/consts";
+import { SchoolDistrictWithReqs } from "@/types";
+import { Badge } from "../ui/badge";
 
-export const columns: ColumnDef<SchoolDistrict>[] = [
+export const columns: ColumnDef<SchoolDistrictWithReqs>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -76,6 +82,38 @@ export const columns: ColumnDef<SchoolDistrict>[] = [
     cell: ({ row }) => <div>{row.getValue("name")}</div>,
   },
   {
+    accessorKey: "status",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Status
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      );
+    },
+    cell: ({ row }) => {
+      const reqs = row.original.complianceRequirements.map((req) => req.status);
+
+      const isCompliant = !reqs.some(
+        (req) => req !== ComplianceRequirementStatus.APPROVED
+      );
+
+      return (
+        <div>
+          {isCompliant ? (
+            <Badge variant="success">Compliant</Badge>
+          ) : (
+            <Badge variant="destructive">Not Compliant</Badge>
+          )}
+        </div>
+      );
+    },
+  },
+  {
+    header: () => <p>Actions</p>,
     id: "actions",
     enableHiding: false,
     cell: () => {
