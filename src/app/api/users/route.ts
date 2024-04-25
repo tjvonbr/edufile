@@ -11,6 +11,10 @@ export async function POST(req: NextRequest) {
       firstName: body.firstName,
       lastName: body.lastName,
       emailAddress: [body.email],
+      privateMetadata: {
+        regionalOfficeId: body.regionalOffice,
+        schoolDistrictId: body.district,
+      },
     });
 
     if (!response.id) {

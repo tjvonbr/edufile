@@ -1,6 +1,9 @@
 import { User, UserRole } from "@prisma/client";
 import { LucideIcons } from "../components/ui/icons";
-import { UserWithSchoolDistricts } from "@/types";
+import {
+  RegionalOfficeWithSchoolDistricts,
+  UserWithSchoolDistricts,
+} from "@/types";
 
 export interface DashboardConfig {
   sidebarNav: SidebarNavItem[];
