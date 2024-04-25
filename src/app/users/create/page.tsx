@@ -6,7 +6,8 @@ import Link from "next/link";
 import prisma from "@/app/services/prisma";
 
 export default async function CreateUserPage() {
-  const districts = await prisma?.schoolDistrict.findMany();
+  const districts = await prisma.schoolDistrict.findMany();
+  const regionalOffices = await prisma.regionalOffice.findMany();
 
   return (
     <div className="container h-screen w-screen flex flex-col items-center justify-center">
@@ -30,15 +31,7 @@ export default async function CreateUserPage() {
             Enter their credentials to continue
           </p>
         </div>
-        <UserForm districts={districts} />
-        <p className="px-8 text-center text-sm text-muted-foreground">
-          <Link
-            href="/register"
-            className="hover:text-brand underline underline-offset-4"
-          >
-            Don&apos;t have an account? Sign Up
-          </Link>
-        </p>
+        <UserForm districts={districts} regionalOffices={regionalOffices} />
       </div>
     </div>
   );

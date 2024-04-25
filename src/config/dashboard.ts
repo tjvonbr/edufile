@@ -41,10 +41,22 @@ export function renderUserDashboard(user: UserWithSchoolDistricts): NavItem[] {
   } else if (user.role === UserRole.REGIONAL_ADMIN) {
     return [
       {
-        title: "My district",
+        title: "Districts",
         href: "/districts/",
         icon: "district",
         disabled: false,
+      },
+      {
+        title: "Users",
+        href: "/",
+        icon: "user",
+        disabled: false,
+      },
+      {
+        title: "Messages",
+        href: "#",
+        icon: "message",
+        disabled: true,
       },
     ];
   } else {
@@ -63,7 +75,7 @@ export function renderUserDashboard(user: UserWithSchoolDistricts): NavItem[] {
       },
       {
         title: "Users",
-        href: "/",
+        href: "/users",
         icon: "user",
         disabled: false,
       },
