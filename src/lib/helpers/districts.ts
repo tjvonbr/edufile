@@ -1,8 +1,27 @@
 import prisma from "@/app/services/prisma";
 import { SchoolDistrict } from "@prisma/client";
 
-export async function getDistricts(): Promise<SchoolDistrict[]> {
-  const districts: SchoolDistrict[] = await prisma.schoolDistrict.findMany();
+export async function getDistricts(userId: string): Promise<SchoolDistrict[]> {
+  const user = await prisma.user.findFirst({
+    where: {
+      id: userId,
+    },
+    include: {
+      schoolDistricts: true,
+    },
+  });
+
+  if (!user) {
+    throw new Error("Could not find user.");
+  }
+
+  const districtIds = user.schoolDistricts.map((district) => district.id);
+
+  const districts: SchoolDistrict[] = await prisma.schoolDistrict.findMany({
+    where: {
+      id: { in: districtIds },
+    },
+  });
 
   return districts;
 }
