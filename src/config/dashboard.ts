@@ -26,6 +26,7 @@ export interface NavItem {
 }
 
 export function renderUserDashboard(user: UserWithSchoolDistricts): NavItem[] {
+  console.log(user);
   if (user.role === UserRole.DISTRICT_USER) {
     return [
       {

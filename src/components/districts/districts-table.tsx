@@ -142,9 +142,10 @@ export const columns: ColumnDef<SchoolDistrictWithReqs>[] = [
 
 interface DistrictTableProps {
   districts: SchoolDistrict[];
+  user: User;
 }
 
-export function DistrictsTable({ districts }: DistrictTableProps) {
+export function DistrictsTable({ districts, user }: DistrictTableProps) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []

@@ -32,8 +32,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { User } from "@prisma/client";
-import { Checkbox } from "./ui/checkbox";
-import { Input } from "./ui/input";
+import { Checkbox } from "../ui/checkbox";
+import { Input } from "../ui/input";
 import { formatDate } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { userRoles } from "@/lib/consts";
@@ -84,6 +84,13 @@ export const columns: ColumnDef<User>[] = [
     cell: ({ row }) => <div>{row.getValue("lastName")}</div>,
   },
   {
+    accessorKey: "email",
+    header: () => {
+      return <p>Email</p>;
+    },
+    cell: ({ row }) => <div>{row.getValue("email")}</div>,
+  },
+  {
     accessorKey: "role",
     header: () => <div className="text-right">Role</div>,
     cell: ({ row }) => {
@@ -112,7 +119,7 @@ export const columns: ColumnDef<User>[] = [
               className="text-red-500"
               onClick={() => window.alert("This is just a placeholder!")}
             >
-              Delete patient
+              Delete user
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
