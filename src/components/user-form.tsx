@@ -19,6 +19,7 @@ import { Form } from "./ui/form";
 import { RegionalOffice, SchoolDistrict, UserRole } from "@prisma/client";
 import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
 import { Icons } from "./ui/icons";
+import { redirect, useRouter } from "next/navigation";
 
 interface UserForm extends React.HTMLAttributes<HTMLDivElement> {
   districts: SchoolDistrict[];
@@ -44,6 +45,8 @@ export function UserForm({
   });
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
+  const router = useRouter();
+
   const role = form.watch("role");
 
   async function onSubmit(data: FormData) {
@@ -64,7 +67,7 @@ export function UserForm({
     setIsLoading(false);
 
     if (!response.ok) {
-      return toast({
+      toast({
         variant: "destructive",
         title: "Something went wrong.",
         description:
@@ -72,10 +75,12 @@ export function UserForm({
       });
     }
 
-    return toast({
+    toast({
       title: "Success!",
       description: `We successfully created an account for ${data.firstName}!`,
     });
+
+    router.push("/");
   }
 
   return (
@@ -211,7 +216,11 @@ export function UserForm({
           />
         )}
         <Button className="w-full" type="submit">
-          {isLoading ? <Icons.spinner /> : "Submit"}
+          {isLoading ? (
+            <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </Form>

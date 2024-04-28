@@ -1,6 +1,6 @@
 import prisma from "@/app/services/prisma";
 import { User, UserRole } from "@prisma/client";
-import { UserTable } from "@/components/UserTable";
+import { UserTable } from "@/components/users/users-table";
 import { DashboardHeader } from "@/components/header";
 import UserCreateButton from "@/components/user-create-button";
 import { auth } from "@clerk/nextjs/server";
@@ -15,6 +15,7 @@ export default async function Dashboard() {
   }
 
   const user = await getUserAndDistrictsById(userId);
+  console.log("User", user);
 
   if (!user) {
     notFound();

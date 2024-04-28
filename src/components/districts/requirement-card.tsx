@@ -2,18 +2,24 @@
 
 import { useState } from "react";
 import { Icons } from "../ui/icons";
-import { ComplianceRequirementStatus } from "@prisma/client";
+import { ComplianceRequirementStatus, User, UserRole } from "@prisma/client";
 import { Badge } from "../ui/badge";
 import { Input } from "../ui/input";
 import { requirementStatusMap } from "@/lib/consts";
 import Link from "next/link";
+import { toast } from "../ui/use-toast";
+import { useRouter } from "next/navigation";
 
 interface RequirementCardProps {
   requirement: any;
+  user: User;
 }
 
-export function RequirementCard({ requirement }: RequirementCardProps) {
+export function RequirementCard({ requirement, user }: RequirementCardProps) {
   const [file, setFile] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
 
   function handleReqStatus() {
     if (
@@ -39,18 +45,34 @@ export function RequirementCard({ requirement }: RequirementCardProps) {
   async function handleSubmit(e: any) {
     e.preventDefault();
 
+    setIsLoading(true);
+
     const formData = new FormData();
     formData.append("file", file);
     formData.append("requirementId", requirement.id);
 
-    try {
-      const response = await fetch("http://localhost:3000/api/documents", {
-        method: "POST",
-        body: formData,
+    const response = await fetch("http://localhost:3000/api/documents", {
+      method: "POST",
+      body: formData,
+    });
+
+    setIsLoading(false);
+
+    if (!response.ok) {
+      toast({
+        title: "Something went wrong.",
+        description:
+          "We couldn't upload your document.  Please try again later.",
+        variant: "destructive",
       });
-    } catch (error) {
-      console.log(error);
     }
+
+    toast({
+      title: "Success!",
+      description: "We've received your attachment for this requirement.",
+    });
+
+    router.refresh();
   }
 
   return (
@@ -72,13 +94,13 @@ export function RequirementCard({ requirement }: RequirementCardProps) {
       </div>
       {requirement.attachmentUrl && (
         <Link
-          className="w-1/4 text-[#0000FF] truncate"
+          className="w-1/4 text-[#0000FF] truncate text-xs"
           href={requirement.attachmentUrl}
         >
           {requirement.attachmentUrl}
         </Link>
       )}
-      {!requirement.attachmentUrl && (
+      {user.role === UserRole.DISTRICT_USER && !requirement.attachmentUrl && (
         <div className="flex space-x-2">
           <form action="submit">
             <Input
@@ -87,9 +109,16 @@ export function RequirementCard({ requirement }: RequirementCardProps) {
               type="file"
             />
           </form>
-          {file && (
-            <button onClick={handleSubmit} className="px-2.5 border rounded-md">
-              <Icons.check size={15} />
+          {user.role === UserRole.DISTRICT_USER && file && (
+            <button
+              onClick={handleSubmit}
+              className="flex justify-center items-center px-2.5 border rounded-md"
+            >
+              {isLoading ? (
+                <Icons.spinner className="h-4 w-4 animate-spin" />
+              ) : (
+                <Icons.check size={15} />
+              )}
             </button>
           )}
         </div>

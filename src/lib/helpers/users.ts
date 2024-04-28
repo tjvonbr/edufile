@@ -1,5 +1,4 @@
 import prisma from "@/app/services/prisma";
-import { UserWithRegionalOfficeAndSchoolDistrictsAndReqs } from "@/types";
 
 export async function getUserAndDistrictsById(id: string): Promise<any | null> {
   const user = await prisma.user.findFirst({
@@ -16,6 +15,7 @@ export async function getUserAndDistrictsById(id: string): Promise<any | null> {
           },
         },
       },
+      schoolDistricts: true,
     },
   });
 
