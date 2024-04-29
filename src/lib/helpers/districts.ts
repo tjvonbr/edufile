@@ -1,4 +1,4 @@
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 import { SchoolDistrict } from "@prisma/client";
 
 export async function getDistricts(userId: string): Promise<SchoolDistrict[]> {

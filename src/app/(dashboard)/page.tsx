@@ -1,4 +1,4 @@
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 import { User, UserRole } from "@prisma/client";
 import { UserTable } from "@/components/users/users-table";
 import { DashboardHeader } from "@/components/header";

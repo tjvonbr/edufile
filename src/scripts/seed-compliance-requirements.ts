@@ -1,5 +1,5 @@
 import { getDistricts } from "@/lib/helpers/districts";
-import prisma from "../app/services/prisma.ts";
+import prisma from "../server/prisma.ts";
 
 export async function main() {
   const districts = await prisma.schoolDistrict.findMany();
