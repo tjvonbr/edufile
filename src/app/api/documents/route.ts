@@ -2,7 +2,7 @@ import { s3BucketName, s3BucketRegion } from "@/lib/consts";
 import { s3 } from "@/services/s3";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/app/services/prisma.ts";
+import prisma from "@/server/prisma";
 import { ComplianceRequirementStatus } from "@prisma/client";
 
 export async function POST(req: NextRequest) {

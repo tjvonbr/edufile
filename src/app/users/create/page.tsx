@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 
 export default async function CreateUserPage() {
   const districts = await prisma.schoolDistrict.findMany();

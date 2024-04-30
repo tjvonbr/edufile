@@ -1,4 +1,4 @@
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 import { User, UserRole } from "@prisma/client";
 import { UserTable } from "@/components/users/users-table";
 import { DashboardHeader } from "@/components/header";
@@ -15,7 +15,6 @@ export default async function Dashboard() {
   }
 
   const user = await getUserAndDistrictsById(userId);
-  console.log("User", user);
 
   if (!user) {
     notFound();

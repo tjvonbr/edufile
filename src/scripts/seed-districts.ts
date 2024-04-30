@@ -1,4 +1,4 @@
-import prisma from "../app/services/prisma.ts";
+import prisma from "../server/prisma.ts";
 import csv from "csvtojson";
 
 export async function main() {

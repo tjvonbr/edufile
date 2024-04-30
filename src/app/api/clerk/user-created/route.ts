@@ -1,7 +1,7 @@
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import { WebhookEvent } from "@clerk/nextjs/server";
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 import { UserRole } from "@prisma/client";
 import { NextResponse } from "next/server";
 

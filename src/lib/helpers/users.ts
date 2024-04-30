@@ -1,4 +1,4 @@
-import prisma from "@/app/services/prisma";
+import prisma from "@/server/prisma";
 
 export async function getUserAndDistrictsById(id: string): Promise<any | null> {
   const user = await prisma.user.findFirst({
