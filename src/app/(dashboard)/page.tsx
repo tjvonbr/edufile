@@ -15,7 +15,6 @@ export default async function Dashboard() {
   }
 
   const user = await getUserAndDistrictsById(userId);
-  console.log("User", user);
 
   if (!user) {
     notFound();

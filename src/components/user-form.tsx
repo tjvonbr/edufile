@@ -19,7 +19,8 @@ import { Form } from "./ui/form";
 import { RegionalOffice, SchoolDistrict, UserRole } from "@prisma/client";
 import { FormControl, FormField, FormItem, FormLabel } from "./ui/form";
 import { Icons } from "./ui/icons";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { trpc } from "@/server/client";
 
 interface UserForm extends React.HTMLAttributes<HTMLDivElement> {
   districts: SchoolDistrict[];
@@ -40,38 +41,32 @@ export function UserForm({
       firstName: "",
       lastName: "",
       email: "",
-      role: "",
     },
   });
-  const [isLoading, setIsLoading] = React.useState<boolean>(false);
+
+  const getUsers = trpc.users.getUsers.useQuery();
+
+  const createUser = trpc.users.createUser.useMutation({
+    onSettled: () => {
+      getUsers.refetch();
+    },
+    onError: (error) => {
+      console.log(error);
+    },
+  });
 
   const router = useRouter();
 
   const role = form.watch("role");
 
   async function onSubmit(data: FormData) {
-    setIsLoading(true);
+    createUser.mutate(data);
 
-    const response = await fetch("http://localhost:3000/api/users", {
-      method: "POST",
-      body: JSON.stringify({
-        firstName: data.firstName,
-        lastName: data.lastName,
-        email: data.email,
-        role: data.role,
-        district: data.district,
-        regionalOffice: data.regionalOffice,
-      }),
-    });
-
-    setIsLoading(false);
-
-    if (!response.ok) {
-      toast({
+    if (createUser.isError) {
+      return toast({
         variant: "destructive",
-        title: "Something went wrong.",
-        description:
-          "We weren't able to create a user record.  Please try again.",
+        title: "Whoops!",
+        description: `We successfully created an account for ${data.firstName}!`,
       });
     }
 
@@ -216,7 +211,7 @@ export function UserForm({
           />
         )}
         <Button className="w-full" type="submit">
-          {isLoading ? (
+          {createUser.status === "pending" ? (
             <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
           ) : (
             "Submit"
