@@ -16,7 +16,9 @@ export const userRouter = router({
     .query(async (opts) => {
       return await prisma.user.findMany({
         where: {
-          schoolDistricts: opts.input.schoolDistrictId,
+          schoolDistricts: {
+            some: { id: opts.input.schoolDistrictId },
+          },
         },
       });
     }),
