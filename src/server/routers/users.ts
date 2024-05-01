@@ -7,6 +7,19 @@ export const userRouter = router({
   getUsers: publicProcedure.query(async () => {
     return await prisma.user.findMany();
   }),
+  getUsersByDistrictId: publicProcedure
+    .input(
+      z.object({
+        schoolDistrictId: z.string(),
+      })
+    )
+    .query(async (opts) => {
+      return await prisma.user.findMany({
+        where: {
+          schoolDistricts: opts.input.schoolDistrictId,
+        },
+      });
+    }),
   createUser: publicProcedure
     .input(
       z.object({
